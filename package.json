@@ -1,15 +1,11 @@
 {
   "name": "js1k-macro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Macro preprocessor for js1k",
   "main": "1k.js",
   "dependencies": {
     "minimist": "^1.1.1",
     "underscore": "^1.8.3"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

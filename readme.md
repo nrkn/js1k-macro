@@ -8,11 +8,19 @@ The idea was to have a macro language where you could write sensible looking cod
 
 I'm popping it on Github in case it's useful to someone else or in case I pick it up again at some point in future
 
+There are some example macros in the /lib and /bin folders
+
+There are some example outputs in the /tmp folder
+
+1k.js does the actual work
+
+build.cmd takes a .1k file and generates javascript plus a shim html in the /tmp folder (sorry, windows .cmd, but works mostly the same as most other shells)
+
 ### JS1k output in shim
 
 ![Shim](shim.png)
 
-### Macro
+### Macro (2287 bytes)
 ```
 !names defghijklmnopqrstuvwxyz
 
@@ -115,7 +123,7 @@ main
   &blit
 ```
 
-### JavaScript
+### JavaScript (1363 bytes)
 ```javascript
 h = function( d, e ){
   c.beginPath();
@@ -159,7 +167,7 @@ for( d = 10; d--; ) g = Math.random(),
           ) : h( d )
 ```
 
-### Packed
+### Packed (423 bytes)
 ```javascript
 for(_=";for(~~(g*4)==4][c.0)f[d][],(2340]==	eTo(Math.random()~~(*,'+10+'%beginPath()]d=10;d--;)fill,40h=function(d,e){;mov01])e=4].length/2;e--;)line*2e*2+1]);()};f=[g=,f[d]=[,'hsl('+36+')',1?25):2?[40]:3?'Helloworld':5,5Style=1	0?Rect5]):	1?(,arc],0,7),()):	3?(Text(423])):h(d)";g=/[-]/.exec(_);)with(_.split(g))_=join(shift());eval(_)
 ```
